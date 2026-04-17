@@ -9,7 +9,7 @@ A modern, interactive portfolio showcasing my projects in Deep Learning, Cyberse
 
 ## 🚀 Live Demo
 
-**[View Portfolio →](https://chakravarthi.github.io/portfolio)**
+**[View Portfolio →](https://chakravarthi06.github.io/Portfolio/)**
 
 ---
 
