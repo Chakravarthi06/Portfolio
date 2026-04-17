@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Chakravarthi | Data Science & Engineering Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Celebration Canvas -->
+    <canvas id="celebration"></canvas>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-content">
+            <div class="profile-section">
+                <div class="avatar-container">
+                    <img src="images/My_Pic.png" class="avatar" alt="C Chakravarthi">
+                    <div class="status-indicator"></div>
+                </div>
+                <h1 class="name">C Chakravarthi</h1>
+                <p class="handle">@chakravarthi</p>
+                <p class="role">B.Tech Data Science & Engineering</p>
+                <p class="location">📍 NIT Jalandhar</p>
+            </div>
+            
+            <nav class="menu">
+                <a href="#about" class="nav-link active" data-section="about">
+                    <span class="icon">👤</span> Profile
+                </a>
+                <a href="#contact" class="nav-link" data-section="contact">
+                    <span class="icon">✉️</span> Contact
+                </a>
+            </nav>
+
+            <div class="social-links">
+                <a href="https://github.com/chakravarthi" target="_blank" class="social-btn" title="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://linkedin.com/in/c-chakravarthi-64a17028a" target="_blank" class="social-btn" title="LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="mailto:chakravarthichatamoni@gmail.com" class="social-btn" title="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Top Navigation -->
+        <nav class="topnav">
+            <button onclick="scrollToSection('about')" class="nav-btn active" data-target="about">About me</button>
+            <button onclick="scrollToSection('skills')" class="nav-btn" data-target="skills">Skills</button>
+            <button onclick="scrollToSection('works')" class="nav-btn" data-target="works">Works</button>
+            <button onclick="scrollToSection('experience')" class="nav-btn" data-target="experience">Experience</button>
+            <button onclick="scrollToSection('contact')" class="nav-btn" data-target="contact">Contact</button>
+        </nav>
+
+        <!-- Logo Circle -->
+        <div class="logo-circle">
+            <svg viewBox="0 0 300 300">
+                <defs>
+                    <path id="circlePath" d="M150,150 m-110,0 a110,110 0 1,1 220,0 a110,110 0 1,1 -220,0"/>
+                </defs>
+                <text>
+                    <textPath href="#circlePath">
+                        C CHAKRAVARTHI • DATA SCIENCE • ENGINEERING •
+                    </textPath>
+                </text>
+            </svg>
+            <img src="images/logo.jpg" class="logo-photo" alt="Logo">
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="hero">
+            <div class="badge">Hi I'm Chakravarthi 👋</div>
+            <h1 class="headline">I build <span class="highlight">intelligent systems</span> and <span class="highlight">secure networks</span></h1>
+            <p class="subtitle">
+                I am currently pursuing a B.Tech degree in <strong>Data Science and Engineering at NIT Jalandhar</strong>, where I am building a strong foundation in data analysis, algorithms, and emerging technologies. With a keen interest in solving complex problems, I have developed skills in <strong>C, C++, Python, and web development</strong>, which allow me to work on versatile projects in both software development and data-driven applications.
+            </p>
+            <p class="subtitle secondary">
+                I am excited to connect with professionals and organizations that share my enthusiasm for technology and data science, and I look forward to contributing to impactful projects that shape the future of the tech industry.
+            </p>
+            
+            <div class="cta-buttons">
+                <button onclick="scrollToSection('works')" class="btn-primary">View My Work</button>
+                <button onclick="scrollToSection('contact')" class="btn-secondary">Get In Touch</button>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="section-header">
+                <h2>Technical Skills</h2>
+                <p class="section-desc">Technologies and tools I work with</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag expert">C</span>
+                        <span class="skill-tag expert">C++</span>
+                        <span class="skill-tag expert">Python</span>
+                        <span class="skill-tag intermediate">R</span>
+                        <span class="skill-tag intermediate">SQL</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Data Science & ML</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Data Analysis</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">Data Visualization</span>
+                        <span class="skill-tag">NLP</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Web & Cloud</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Web Development</span>
+                        <span class="skill-tag">API Development</span>
+                        <span class="skill-tag">Cloud Basics</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Security & Systems</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Network Security</span>
+                        <span class="skill-tag">Cybersecurity</span>
+                        <span class="skill-tag">Linux</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works/Projects Section -->
+        <section id="works" class="works-section">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p class="section-desc">Click on any project to view detailed case study</p>
+            </div>
+
+            <!-- Project 1: Image Encryption -->
+            <article class="case-card yellow" onclick="openProjectModal('gan-unet')">
+                <div class="case-content">
+                    <div class="case-header">
+                        <span class="brand">Deep Learning Project</span>
+                        <div class="project-meta">
+                            <span class="year">2024</span>
+                            <span class="status completed">Completed</span>
+                        </div>
+                    </div>
+                    <h2>Image Encryption using GAN + U-Net</h2>
+                    <div class="tags">
+                        <span>Deep Learning</span>
+                        <span>Computer Vision</span>
+                        <span>Cryptography</span>
+                        <span>Python</span>
+                    </div>
+                    <p class="case-excerpt">
+                        A novel approach to secure image encryption using Generative Adversarial Networks combined with U-Net architecture and chaotic maps for enhanced security.
+                    </p>
+                    <div class="case-footer">
+                        <button class="case-btn">View Case Study →</button>
+                        <div class="tech-stack">
+                            <span>PyTorch</span>
+                            <span>OpenCV</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-image">
+                    <img src="images/proj1.png" alt="Image Encryption Project">
+                    <div class="image-overlay">
+                        <span>Click to explore</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2: Plagiarism Checker -->
+            <article class="case-card blue" onclick="openProjectModal('plagiarism')">
+                <div class="case-content">
+                    <div class="case-header">
+                        <span class="brand">NLP Project</span>
+                        <div class="project-meta">
+                            <span class="year">2024</span>
+                            <span class="status completed">Completed</span>
+                        </div>
+                    </div>
+                    <h2>Plagiarism Checker using NLP</h2>
+                    <div class="tags">
+                        <span>NLP</span>
+                        <span>Machine Learning</span>
+                        <span>Text Processing</span>
+                        <span>Python</span>
+                    </div>
+                    <p class="case-excerpt">
+                        Intelligent document similarity detection system using TF-IDF vectorization and cosine similarity algorithms to identify semantic plagiarism.
+                    </p>
+                    <div class="case-footer">
+                        <button class="case-btn">View Case Study →</button>
+                        <div class="tech-stack">
+                            <span>scikit-learn</span>
+                            <span>NLTK</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-image">
+                    <img src="images/proj2.png" alt="Plagiarism Checker Project">
+                    <div class="image-overlay">
+                        <span>Click to explore</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="section-header">
+                <h2>Professional Experience</h2>
+                <p class="section-desc">Internships and industry training</p>
+            </div>
+
+            <div class="experience-grid">
+                <!-- C-DAC Experience -->
+                <div class="exp-card" onclick="openExperienceModal('cdac')">
+                    <div class="exp-header">
+                        <div class="exp-icon">🔒</div>
+                        <div class="exp-info">
+                            <h3>C-DAC Cyber Gyan Virtual Internship</h3>
+                            <p class="exp-role">Cybersecurity Intern</p>
+                            <p class="exp-duration">Duration: 4 Weeks</p>
+                        </div>
+                    </div>
+                    <p class="exp-summary">
+                        Comprehensive training in cybersecurity fundamentals, malware analysis, and network security protocols. Developed a <strong>Fake News Detection System</strong> as the capstone project.
+                    </p>
+                    <div class="exp-highlights">
+                        <span>Network Security</span>
+                        <span>Cryptography</span>
+                        <span>Malware Analysis</span>
+                    </div>
+                    <div class="exp-footer">
+                        <span class="view-details">View Details & Certificate →</span>
+                    </div>
+                </div>
+
+                <!-- BSNL Experience -->
+                <div class="exp-card" onclick="openExperienceModal('bsnl')">
+                    <div class="exp-header">
+                        <div class="exp-icon">📡</div>
+                        <div class="exp-info">
+                            <h3>BSNL Telecom Internship</h3>
+                            <p class="exp-role">Telecom Engineering Intern</p>
+                            <p class="exp-duration">Duration: 2 Weeks</p>
+                        </div>
+                    </div>
+                    <p class="exp-summary">
+                        Hands-on experience with telecom network architecture, optical fiber communication systems, and mobile network infrastructure including 4G/5G technologies.
+                    </p>
+                    <div class="exp-highlights">
+                        <span>Network Architecture</span>
+                        <span>Optical Fiber</span>
+                        <span>Mobile Networks</span>
+                    </div>
+                    <div class="exp-footer">
+                        <span class="view-details">View Details & Certificate →</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="section-header">
+                <h2>Let's Work Together</h2>
+                <p class="section-desc">Open for collaborations and opportunities</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-detail">
+                            <h4>Email</h4>
+                            <a href="mailto:chakravarthichatamoni@gmail.com">chakravarthichatamoni@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div class="contact-detail">
+                            <h4>LinkedIn</h4>
+                            <a href="https://linkedin.com/in/c-chakravarthi-64a17028a" target="_blank">linkedin.com/in/c-chakravarthi-64a17028a</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🎓</div>
+                        <div class="contact-detail">
+                            <h4>Education</h4>
+                            <p>NIT Jalandhar<br>B.Tech Data Science & Engineering</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="availability-badge">
+                    <span class="pulse"></span>
+                    <p>Available for internships and projects</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>© 2024 C Chakravarthi. Built with passion and precision.</p>
+        </footer>
+    </main>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('project-modal')">&times;</button>
+            <div id="project-details">
+                <!-- Dynamic content loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience Modal -->
+    <div id="experience-modal" class="modal">
+        <div class="modal-content large">
+            <button class="modal-close" onclick="closeModal('experience-modal')">&times;</button>
+            <div id="experience-details-content">
+                <!-- Dynamic content loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Project Data
+        const projectsData = {
+            'gan-unet': {
+                title: 'Image Encryption using GAN + U-Net',
+                subtitle: 'Secure Image Cryptography with Deep Learning',
+                description: `
+                    <div class="project-section">
+                        <h3>Project Overview</h3>
+                        <p>This project presents a novel hybrid approach to image encryption combining <strong>Generative Adversarial Networks (GANs)</strong>, <strong>U-Net architecture</strong>, and <strong>chaotic map algorithms</strong> to create a robust cryptographic system for secure image transmission.</p>
+                    </div>
+                    
+                    <div class="project-section">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li><strong>Dual-layer Security:</strong> Combines deep learning-based transformation with chaotic map permutation</li>
+                            <li><strong>High Entropy:</strong> Achieved entropy > 7.99 indicating strong randomness</li>
+                            <li><strong>Low Correlation:</strong> Adjacent pixel correlation close to zero (horizontal: 0.0012, vertical: 0.0023)</li>
+                            <li><strong>Large Key Space:</strong> 2^128 possible keys resisting brute-force attacks</li>
+                            <li><strong>Real-time Processing:</strong> Average encryption time < 0.5s for 512x512 images</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-section">
+                        <h3>Technical Architecture</h3>
+                        <div class="architecture-diagram">
+                            <div class="arch-step">Input Image</div>
+                            <div class="arrow">↓</div>
+                            <div class="arch-step">U-Net Feature Extraction</div>
+                            <div class="arrow">↓</div>
+                            <div class="arch-step">GAN Generator Encryption</div>
+                            <div class="arrow">↓</div>
+                            <div class="arch-step">Chaotic Map Permutation</div>
+                            <div class="arrow">↓</div>
+                            <div class="arch-step">Encrypted Output</div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-section">
+                        <h3>Technologies Used</h3>
+                        <div class="tech-grid">
+                            <div class="tech-item">PyTorch</div>
+                            <div class="tech-item">TensorFlow</div>
+                            <div class="tech-item">OpenCV</div>
+                            <div class="tech-item">NumPy</div>
+                            <div class="tech-item">Matplotlib</div>
+                            <div class="tech-item">Python</div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-section">
+                        <h3>Results & Performance</h3>
+                        <div class="results-grid">
+                            <div class="result-card">
+                                <h4>PSNR</h4>
+                                <p class="metric">8.42 dB</p>
+                                <p class="desc">Low values indicate high encryption quality</p>
+                            </div>
+                            <div class="result-card">
+                                <h4>SSIM</h4>
+                                <p class="metric">0.012</p>
+                                <p class="desc">Structural dissimilarity confirms security</p>
+                            </div>
+                            <div class="result-card">
+                                <h4>Entropy</h4>
+                                <p class="metric">7.997</p>
+                                <p class="desc">Close to ideal value of 8</p>
+                            </div>
+                        </div>
+                    </div>
+                `,
+                image: 'images/proj1.png',
+                github: 'https://github.com/chakravarthi/image-encryption-gan',
+                demo: '#',
+                tags: ['Deep Learning', 'Computer Vision', 'Cryptography']
+            },
+            'plagiarism': {
+                title: 'Plagiarism Checker using NLP',
+                subtitle: 'Semantic Text Similarity Detection System',
+                description: `
+                    <div class="project-section">
+                        <h3>Project Overview</h3>
+                        <p>An intelligent plagiarism detection system that goes beyond simple string matching to identify <strong>semantic similarity</strong> between documents using Natural Language Processing techniques and machine learning algorithms.</p>
+                    </div>
+                    
+                    <div class="project-section">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li><strong>Semantic Analysis:</strong> Uses Word2Vec embeddings to understand context</li>
+                            <li><strong>Multi-format Support:</strong> Processes PDF, DOCX, and TXT files</li>
+                            <li><strong>Similarity Scoring:</strong> Provides percentage match with highlighted sections</li>
+                            <li><strong>Paraphrase Detection:</strong> Identifies reworded content through semantic similarity</li>
+                            <li><strong>Batch Processing:</strong> Compare multiple documents simultaneously</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-section">
+                        <h3>Algorithm Pipeline</h3>
+                        <div class="architecture-diagram">
+                            <div class="arch-step">Text Preprocessing</div>
+                            <div class="arrow">↓</div>
+                            <div class="arch-step">Tokenization & Lemmatization</div>
+                            <div class="arrow">↓</div>
+                            <div class="arch-step">TF-IDF Vectorization</div>
+                            <div class="arrow">↓</div>
+                            <div class="arch-step">Cosine Similarity Calculation</div>
+                            <div class="arrow">↓</div>
+                            <div class="arch-step">Similarity Report</div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-section">
+                        <h3>Technologies Used</h3>
+                        <div class="tech-grid">
+                            <div class="tech-item">Python</div>
+                            <div class="tech-item">scikit-learn</div>
+                            <div class="tech-item">NLTK</div>
+                            <div class="tech-item">spaCy</div>
+                            <div class="tech-item">Flask</div>
+                            <div class="tech-item">React</div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-section">
+                        <h3>Performance Metrics</h3>
+                        <div class="results-grid">
+                            <div class="result-card">
+                                <h4>Accuracy</h4>
+                                <p class="metric">94.3%</p>
+                                <p class="desc">On test dataset of 1000 documents</p>
+                            </div>
+                            <div class="result-card">
+                                <h4>Precision</h4>
+                                <p class="metric">92.8%</p>
+                                <p class="desc">Low false positive rate</p>
+                            </div>
+                            <div class="result-card">
+                                <h4>Processing Speed</h4>
+                                <p class="metric">0.3s</p>
+                                <p class="desc">Per 1000 words comparison</p>
+                            </div>
+                        </div>
+                    </div>
+                `,
+                image: 'images/proj2.png',
+                github: 'https://github.com/chakravarthi/plagiarism-checker',
+                demo: '#',
+                tags: ['NLP', 'Machine Learning', 'Text Processing']
+            }
+        };
+
+        // Experience Data
+        const experienceData = {
+            'cdac': {
+                title: 'C-DAC Cyber Gyan Virtual Internship',
+                role: 'Cybersecurity Intern',
+                duration: '4 Weeks (2024)',
+                certificate: 'images/Cybergyan_Certificate.png',
+                description: `
+                    <div class="exp-detail-section">
+                        <h3>Internship Overview</h3>
+                        <p>Intensive virtual internship program by <strong>Centre for Development of Advanced Computing (C-DAC)</strong>, India's premier R&D organization in IT and Electronics. The program focused on practical cybersecurity skills and threat mitigation techniques.</p>
+                    </div>
+                    
+                    <div class="exp-detail-section">
+                        <h3>Key Learning Outcomes</h3>
+                        <ul class="outcomes-list">
+                            <li><strong>Cybersecurity Fundamentals:</strong> Mastered core concepts of confidentiality, integrity, and availability (CIA triad)</li>
+                            <li><strong>Threat Modeling:</strong> Learned STRIDE and DREAD methodologies for identifying system vulnerabilities</li>
+                            <li><strong>Malware Analysis:</strong> Hands-on experience with static and dynamic analysis of malicious software</li>
+                            <li><strong>Cryptography Basics:</strong> Implemented symmetric and asymmetric encryption algorithms</li>
+                            <li><strong>Network Security:</strong> Configured firewalls, IDS/IPS systems, and VPNs</li>
+                            <li><strong>Secure Coding Practices:</strong> OWASP Top 10 vulnerabilities and mitigation strategies</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="exp-detail-section">
+                        <h3>Capstone Project: Fake News Detection System</h3>
+                        <div class="project-highlight">
+                            <h4>Project Description</h4>
+                            <p>Developed a machine learning-based system to identify fake news articles using Natural Language Processing techniques and classification algorithms.</p>
+                            
+                            <h4>Technical Implementation</h4>
+                            <ul>
+                                <li>Dataset: LIAR dataset with 12.8K labeled statements</li>
+                                <li>Features: TF-IDF, sentiment analysis, and linguistic features</li>
+                                <li>Models: Logistic Regression, Random Forest, and LSTM networks</li>
+                                <li>Accuracy: Achieved 89.4% classification accuracy</li>
+                            </ul>
+                            
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Real-time news article classification</li>
+                                <li>Browser extension for instant verification</li>
+                                <li>Confidence scoring with explanation</li>
+                                <li>Source credibility analysis</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="exp-detail-section">
+                        <h3>Tools & Technologies</h3>
+                        <div class="tech-grid">
+                            <div class="tech-item">Wireshark</div>
+                            <div class="tech-item">Metasploit</div>
+                            <div class="tech-item">Nmap</div>
+                            <div class="tech-item">Burp Suite</div>
+                            <div class="tech-item">Python</div>
+                            <div class="tech-item">Kali Linux</div>
+                        </div>
+                    </div>
+                `
+            },
+            'bsnl': {
+                title: 'BSNL Telecom Internship',
+                role: 'Telecom Engineering Intern',
+                duration: '2 Weeks (2024)',
+                certificate: 'images/BSNL_Certificate.png',
+                description: `
+                    <div class="exp-detail-section">
+                        <h3>Internship Overview</h3>
+                        <p>Industrial training at <strong>Bharat Sanchar Nigam Limited (BSNL)</strong>, India's largest government-owned telecommunications company. Gained practical exposure to telecom infrastructure and network operations.</p>
+                    </div>
+                    
+                    <div class="exp-detail-section">
+                        <h3>Training Modules</h3>
+                        <ul class="outcomes-list">
+                            <li><strong>Telecom Network Architecture:</strong> Understanding of PSTN, ISDN, and MPLS networks</li>
+                            <li><strong>Switching Systems:</strong> Study of digital switching exchanges and routing protocols</li>
+                            <li><strong>Optical Fiber Communication:</strong> DWDM, SONET/SDH technologies and fiber splicing techniques</li>
+                            <li><strong>Mobile Networks:</strong> 2G/3G/4G architecture, call flow procedures, and handover mechanisms</li>
+                            <li><strong>Broadband Technologies:</strong> ADSL, VDSL, and GPON systems</li>
+                            <li><strong>Network Management:</strong> OSS/BSS systems and fault management procedures</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="exp-detail-section">
+                        <h3>Hands-on Experience</h3>
+                        <div class="project-highlight">
+                            <h4>Site Visits</h4>
+                            <ul>
+                                <li>Telephone Exchange: Observed switching equipment and line termination</li>
+                                <li>Base Transceiver Station (BTS): Studied antenna systems and RF equipment</li>
+                                <li>Network Operations Center: Monitored live network traffic and alarm systems</li>
+                                <li>Fiber Distribution Hub: Learned splicing and OTDR testing</li>
+                            </ul>
+                            
+                            <h4>Practical Skills</h4>
+                            <ul>
+                                <li>Cable termination and testing using OTDR</li>
+                                <li>Signal strength measurement and analysis</li>
+                                <li>Basic troubleshooting of line faults</li>
+                                <li>Understanding of QoS parameters in telecom networks</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="exp-detail-section">
+                        <h3>Technologies Studied</h3>
+                        <div class="tech-grid">
+                            <div class="tech-item">DWDM</div>
+                            <div class="tech-item">GPON</div>
+                            <div class="tech-item">MPLS</div>
+                            <div class="tech-item">4G LTE</div>
+                            <div class="tech-item">SDH/SONET</div>
+                            <div class="tech-item">OTDR</div>
+                        </div>
+                    </div>
+                `
+            }
+        };
+
+        // Modal Functions
+        function openProjectModal(projectId) {
+            const project = projectsData[projectId];
+            const modal = document.getElementById('project-modal');
+            const details = document.getElementById('project-details');
+            
+            details.innerHTML = `
+                <div class="modal-header">
+                    <div class="modal-tags">
+                        ${project.tags.map(tag => `<span class="modal-tag">${tag}</span>`).join('')}
+                    </div>
+                    <h2>${project.title}</h2>
+                    <p class="modal-subtitle">${project.subtitle}</p>
+                </div>
+                
+                <div class="modal-body">
+                    <div class="modal-image">
+                        <img src="${project.image}" alt="${project.title}">
+                    </div>
+                    ${project.description}
+                </div>
+                
+                <div class="modal-actions">
+                    <a href="${project.github}" target="_blank" class="btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        View on GitHub
+                    </a>
+                    <a href="${project.demo}" target="_blank" class="btn-secondary">
+                        <span>Live Demo</span>
+                    </a>
+                </div>
+            `;
+            
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function openExperienceModal(expId) {
+            const exp = experienceData[expId];
+            const modal = document.getElementById('experience-modal');
+            const details = document.getElementById('experience-details-content');
+            
+            details.innerHTML = `
+                <div class="modal-header">
+                    <div class="exp-title-block">
+                        <h2>${exp.title}</h2>
+                        <p class="exp-role-large">${exp.role}</p>
+                        <p class="exp-duration-large">📅 ${exp.duration}</p>
+                    </div>
+                </div>
+                
+                <div class="modal-body">
+                    <div class="exp-columns">
+                        <div class="exp-main">
+                            ${exp.description}
+                        </div>
+                        
+                        <div class="exp-sidebar">
+                            <div class="certificate-section">
+                                <h3>Certificate</h3>
+                                <div class="certificate-container">
+                                    <img src="${exp.certificate}" alt="Certificate" class="certificate-img" onclick="window.open('${exp.certificate}', '_blank')">
+                                    <div class="certificate-overlay">
+                                        <span>Click to view full size</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on outside click
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Smooth scroll function
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                
+                // Update active states
+                document.querySelectorAll('.nav-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                    if (btn.dataset.target === id) btn.classList.add('active');
+                });
+                
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.remove('active');
+                    if (link.dataset.section === id) link.classList.add('active');
+                });
+            }
+        }
+
+        // Celebration Animation
+        const canvas = document.getElementById('celebration');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const colors = ['#ff595e', '#ffca3a', '#8ac926', '#1982c4', '#6a4c93'];
+        const pieces = [];
+        const gravity = 0.15;
+
+        for (let i = 0; i < 160; i++) {
+            pieces.push({
+                x: Math.random() * canvas.width,
+                y: canvas.height + Math.random() * 100,
+                vy: -(Math.random() * 6 + 6),
+                size: Math.random() * 8 + 4,
+                color: colors[Math.floor(Math.random() * colors.length)],
+                rot: Math.random() * 360,
+                spin: Math.random() * 2 - 1
+            });
+        }
+
+        function animate() {
+            if (canvas.style.display === 'none') return;
+            
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            pieces.forEach(p => {
+                p.vy += gravity;
+                p.y += p.vy;
+                p.rot += p.spin;
+
+                ctx.save();
+                ctx.translate(p.x, p.y);
+                ctx.rotate(p.rot * Math.PI / 180);
+                ctx.fillStyle = p.color;
+                ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size * 2);
+                ctx.restore();
+
+                if (p.y > canvas.height + 50) {
+                    p.y = -20;
+                    p.x = Math.random() * canvas.width;
+                    p.vy = -(Math.random() * 6 + 6);
+                }
+            });
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+
+        setTimeout(() => {
+            canvas.style.display = 'none';
+            document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+        }, 3500);
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                    
+                    // Update navigation
+                    const id = entry.target.id;
+                    document.querySelectorAll('.nav-btn').forEach(btn => {
+                        btn.classList.remove('active');
+                        if (btn.dataset.target === id) btn.classList.add('active');
+                    });
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Resize handler
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+</body>
+</html>
